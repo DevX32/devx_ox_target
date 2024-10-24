@@ -19,7 +19,7 @@ export function createOptions(type, data, id, zoneId) {
     data.iconColor ? `style = color:${data.iconColor} !important` : null
   }"></i>`;
 
-  <p class="option-label">${data.label}</p>`;
+  option.innerHTML = `${iconElement}<p class="option-label">${data.label}</p>`;
   option.className = "option-container";
   option.targetType = type;
   option.targetId = id;
